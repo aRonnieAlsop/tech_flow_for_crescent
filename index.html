@@ -51,29 +51,151 @@
 
     <section class="dashboard-grid">
       <div class="main-column">
-        <section class="accordion open">
-          <button class="accordion-toggle" type="button">
-            <span>Sprint 1 · Mews Setup</span>
-            <span class="accordion-icon">–</span>
-          </button>
 
+        <section class="accordion">
+          <button class="accordion-toggle" type="button">
+            <span>1 · Core Hotel Setup</span>
+            <span class="accordion-icon">+</span>
+          </button>
           <div class="accordion-content">
             <p class="section-copy">
-              Goal: get Crescent Hotel to the point where a guest can theoretically reserve a room.
+              Purpose: finish the minimum Mews setup required for rooms to be bookable, paid for, checked into, and checked out of.
+            </p>
+            <div class="checklist">
+              <label><input type="checkbox" class="progress-check"> Confirm actual opening room numbers</label>
+              <label><input type="checkbox" class="progress-check"> Confirm which rooms open first</label>
+              <label><input type="checkbox" class="progress-check"> Confirm room occupancy and bed setup</label>
+              <label><input type="checkbox" class="progress-check"> Create remaining opening rooms/spaces in Mews</label>
+              <label><input type="checkbox" class="progress-check"> Confirm opening nightly rates</label>
+              <label><input type="checkbox" class="progress-check"> Confirm weekday/weekend/seasonal pricing basics</label>
+              <label><input type="checkbox" class="progress-check"> Confirm taxes before changing tax settings</label>
+              <label><input type="checkbox" class="progress-check"> Confirm cancellation policy</label>
+              <label><input type="checkbox" class="progress-check"> Confirm payment policy: deposit, full payment, or pay later</label>
+              <label><input type="checkbox" class="progress-check"> Review guest email defaults</label>
+              <label><input type="checkbox" class="progress-check"> Prepare Mews Booking Engine for Wix</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="accordion">
+          <button class="accordion-toggle" type="button">
+            <span>2 · Guest Experience</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p class="section-copy">
+              Purpose: make sure the guest can move from booking to room access with as little staff help as possible.
+            </p>
+            <div class="checklist">
+              <label><input type="checkbox" class="progress-check"> Map direct website booking journey</label>
+              <label><input type="checkbox" class="progress-check"> Map walk-up kiosk booking journey</label>
+              <label><input type="checkbox" class="progress-check"> Confirm online check-in requirements</label>
+              <label><input type="checkbox" class="progress-check"> Confirm ID verification method</label>
+              <label><input type="checkbox" class="progress-check"> Confirm digital registration card/signature requirements</label>
+              <label><input type="checkbox" class="progress-check"> Confirm what happens if guest needs help</label>
+              <label><input type="checkbox" class="progress-check"> Confirm store/staff fallback process</label>
+              <label><input type="checkbox" class="progress-check"> Test full reservation flow once configured</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="accordion">
+          <button class="accordion-toggle" type="button">
+            <span>3 · Revenue + Distribution</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p class="section-copy">
+              Purpose: research and decide how rates will update across Wix, Expedia, Booking.com, and other channels.
+            </p>
+            <div class="checklist">
+              <label><input type="checkbox" class="progress-check"> Complete RoomPriceGenie demo</label>
+              <label><input type="checkbox" class="progress-check"> Compare RoomPriceGenie against Mews RMS / Atomize</label>
+              <label><input type="checkbox" class="progress-check"> Confirm whether RMS is required for opening or later phase</label>
+              <label><input type="checkbox" class="progress-check"> Confirm desired OTA channels: Expedia, Booking.com, Hotels.com, etc.</label>
+              <label><input type="checkbox" class="progress-check"> Research channel manager options inside Mews Marketplace</label>
+              <label><input type="checkbox" class="progress-check"> Decide whether direct bookings launch first</label>
+              <label><input type="checkbox" class="progress-check"> Document how rates will push back to all booking sources</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="accordion">
+          <button class="accordion-toggle" type="button">
+            <span>4 · Hardware + Integrations</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p class="section-copy">
+              Purpose: prepare the physical and integration pieces that make low-staff operation possible.
+            </p>
+            <div class="checklist">
+              <label><input type="checkbox" class="progress-check"> Confirm Square account/payment setup</label>
+              <label><input type="checkbox" class="progress-check"> Decide Square terminal or reader for kiosk/front-desk use</label>
+              <label><input type="checkbox" class="progress-check"> Research Onity-compatible guest middleware</label>
+              <label><input type="checkbox" class="progress-check"> Confirm Onity DirectKey workflow</label>
+              <label><input type="checkbox" class="progress-check"> Confirm key encoder / key cutter setup</label>
+              <label><input type="checkbox" class="progress-check"> Confirm primary and backup laptop requirements</label>
+              <label><input type="checkbox" class="progress-check"> Confirm iPad kiosk hardware and lockdown mode</label>
+              <label><input type="checkbox" class="progress-check"> Defer printers unless needed for opening</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="accordion audit-note">
+          <button class="accordion-toggle" type="button">
+            <span>Already Done Before Sprint</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p class="section-copy">
+              These items appear to have been configured before our active setup work began. They should be reviewed, but not assumed to be our completed work.
             </p>
 
-            <div class="checklist">
-              <label><input type="checkbox" class="progress-check"> Audit existing Mews property setup</label>
-              <label><input type="checkbox" class="progress-check"> Confirm property info, address, time zone, currency</label>
-              <label><input type="checkbox" class="progress-check"> Confirm taxes / lodging tax setup</label>
-              <label><input type="checkbox" class="progress-check"> Create or verify all 9 rooms</label>
-              <label><input type="checkbox" class="progress-check"> Create room types and occupancy rules</label>
-              <label><input type="checkbox" class="progress-check"> Create opening rate plans</label>
-              <label><input type="checkbox" class="progress-check"> Confirm availability / blocked rooms</label>
-              <label><input type="checkbox" class="progress-check"> Review users and staff access</label>
-              <label><input type="checkbox" class="progress-check"> Confirm Square payment setup</label>
-              <label><input type="checkbox" class="progress-check"> Prepare Mews Booking Engine for Wix</label>
-              <label><input type="checkbox" class="progress-check"> Collect owner questions as they come up</label>
+            <div class="audit-grid">
+              <div class="audit-card">
+                <h3>Property + Users</h3>
+                <ul>
+                  <li>Crescent Hotel property exists in Mews</li>
+                  <li>Basic property details entered</li>
+                  <li>Logo/sign-in logo uploaded</li>
+                  <li>Departments created: Front Office, Housekeeping, Management</li>
+                  <li>Multiple user accounts created</li>
+                </ul>
+              </div>
+
+              <div class="audit-card">
+                <h3>Finance</h3>
+                <ul>
+                  <li>Accounting categories created</li>
+                  <li>Accommodation, F&B, payments, invoices, cancellation fee categories exist</li>
+                  <li>Accounting configuration partially populated</li>
+                  <li>Default bill counter exists</li>
+                  <li>No cashier created yet</li>
+                </ul>
+              </div>
+
+              <div class="audit-card">
+                <h3>Services + Spaces</h3>
+                <ul>
+                  <li>Stay service exists</li>
+                  <li>F&B and Adjustment service containers exist</li>
+                  <li>Adult/Child age categories exist</li>
+                  <li>Standard Room category exists</li>
+                  <li>Room 101 exists as the first created room</li>
+                </ul>
+              </div>
+
+              <div class="audit-card">
+                <h3>Policies + Marketplace</h3>
+                <ul>
+                  <li>Non-refundable cancellation policy exists</li>
+                  <li>Guest email templates exist as defaults</li>
+                  <li>RMS marketplace options available</li>
+                  <li>Distribution/channel manager marketplace options available</li>
+                  <li>Digital key section available but dependent on lock/middleware decision</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
@@ -223,30 +345,38 @@
         </section>
 
         <section class="side-card">
-          <div class="eyebrow">Latest RMS Note</div>
-          <h3>Mews RMS / Atomize</h3>
+          <div class="eyebrow">Main Mission</div>
+          <h3>Guest Journey</h3>
           <p>
-            Mews guidance says RMS is a stronger fit at 20+ rooms and works best with 5+ rooms per pricing category.
+            Get the hotel from booking to check-in to room access with as little staff intervention as possible.
           </p>
         </section>
 
         <section class="side-card">
-          <div class="eyebrow">Current Lens</div>
-          <h3>RMS Decision</h3>
+          <div class="eyebrow">Side Quest 1</div>
+          <h3>RMS + Distribution</h3>
           <p>
-            Compare RoomPriceGenie against Mews' PMS-first recommendation. Do not add RMS unless it clearly reduces manual work for Phase 1.
+            Compare RoomPriceGenie, Mews RMS / Atomize, OTA pricing, and channel manager requirements.
+          </p>
+        </section>
+
+        <section class="side-card">
+          <div class="eyebrow">Side Quest 2</div>
+          <h3>Onity Middleware</h3>
+          <p>
+            Find the best path from Mews check-in to ID verification to Onity DirectKey/mobile key delivery.
           </p>
         </section>
 
         <section class="side-card">
           <div class="eyebrow">Open Questions</div>
           <ul>
-            <li>Which rooms are opening first?</li>
-            <li>Opening rates?</li>
+            <li>Confirm room numbers</li>
+            <li>Opening rates</li>
             <li>Deposit or full payment?</li>
             <li>OTA channels?</li>
             <li>ID verification method?</li>
-            <li>Lock middleware preference?</li>
+            <li>Square terminal choice?</li>
           </ul>
         </section>
       </aside>
