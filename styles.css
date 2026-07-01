@@ -650,3 +650,61 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.ai-rate-section {
+  margin-top: 34px;
+}
+
+.prompt-card {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  padding: 18px;
+  margin-bottom: 24px;
+}
+
+.prompt-box {
+  margin-top: 14px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .88rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  color: var(--soft-black);
+}
+
+.ai-response {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+  color: var(--soft-black);
+  line-height: 1.6;
+}
+
+.ai-response h3 {
+  font-family: "Oswald", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 1.1rem;
+  margin: 22px 0 8px;
+}
+
+.mini-rate-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+}
+
+.mini-rate-table th,
+.mini-rate-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 10px;
+  text-align: left;
+}
+
+@media (max-width: 820px) {
+  .prompt-box {
+    font-size: .82rem;
+    padding: 14px;
+  }
+}
